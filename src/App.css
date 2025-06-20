@@ -50,7 +50,7 @@ input {
 }
 
 .appContainer {
-  height: 98vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
