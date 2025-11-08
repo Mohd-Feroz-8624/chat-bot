@@ -1,9 +1,7 @@
-
-import { useEffect, useRef } from 'react';
-import { ChatMessage } from './ChatMessage';
+import { useEffect, useRef } from "react";
+import { ChatMessage } from "./ChatMessage";
 
 function ChatMessages({ chatMessages }) {
-
   const chatMessagesRef = useRef(null);
 
   useEffect(() => {
@@ -14,8 +12,7 @@ function ChatMessages({ chatMessages }) {
   }, [chatMessages]);
 
   return (
-    <div className="chat-messages-container"
-      ref={chatMessagesRef}>
+    <div className="chat-messages-container" ref={chatMessagesRef}>
       {chatMessages.map((chatMessage) => {
         return (
           <ChatMessage
